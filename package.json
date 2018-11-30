@@ -1,0 +1,23 @@
+{
+  "name": "wbiztool-node",
+  "version": "1.0.0",
+  "description": "Just a proxy for the API (https://wbiztool.com/docs/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rzorzal/wbiztool-node.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rzorzal/wbiztool-node/issues"
+  },
+  "homepage": "https://github.com/rzorzal/wbiztool-node#readme",
+  "dependencies": {
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.5"
+  }
+}
