@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/rzorzal/wbiztool-node#readme",
   "dependencies": {
+    "node-fetch": "^2.3.0",
     "request": "^2.88.0",
     "request-promise-native": "^1.0.5"
   }

@@ -1,9 +1,9 @@
-const request = require('request-promise-native');
+const fetch = require('node-fetch');
 
 class WbizTool {
 
     get host(){
-        return `https://wbiztool.com/api/v1/`;
+        return `https://wbiztool.com/api/v1`;
     }
 
     constructor({client_id, api_key}){
@@ -32,7 +32,10 @@ class WbizTool {
         }
 
         let body = {
-            whatsapp_client, phone, msg
+            phone, msg, webhook, msg_type,
+            client_id: parseInt(this.client_id),
+            api_key: this.api_key,
+            whatsapp_client: parseInt(whatsapp_client)
         }
 
         if(msg_type === 1){
@@ -47,16 +50,23 @@ class WbizTool {
             body = {...body, file_url, file_name};
         }
 
-        const response = await request.post(`${this.host}/send_msg/`, body);
+        const response = await fetch(`${this.host}/send_msg/`, {
+            method: "POST",
+            body: JSON.stringify(body),
+            headers:{
+                "Content-Type": "application/json"
+            }
+        });
 
-        if(response.error){
-            throw new Error(JSON.stringify(response.error));
+        if(!response.ok){
+            throw new Error(response.status + " - " + response.statusText);
         }
+        const data = await response.json();
 
-        if(typeof response.body == "string"){
-            return JSON.parse(response.body);
+        if(typeof data == "string"){
+            return JSON.parse(data);
         } else {
-            return response.body;
+            return data;
         }
 
     }
