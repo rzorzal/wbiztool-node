@@ -8,8 +8,8 @@ const wbizInstance = new Wbiz({
 
 wbizInstance.sendMessage({
     whatsapp_client: "495",
-    phone: "5527981412097",
-    msg: "Testando o código",
+    phone: "XXXX",
+    msg: "*Testando o código* haha",
 }).then(function(result){
     console.log(result);
 });
