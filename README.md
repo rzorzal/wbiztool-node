@@ -4,7 +4,7 @@ Just a proxy for the API (https://wbiztool.com/docs/)
 ## Exemple
 
 ```javascript
-let Wbiz = require('./wbiztool-node');
+let Wbiz = require('wbiztool-node');
 
 
 const wbizInstance = new Wbiz({
