@@ -1,6 +1,6 @@
 {
   "name": "wbiztool-node",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Just a proxy for the API (https://wbiztool.com/docs/)",
   "main": "index.js",
   "scripts": {
