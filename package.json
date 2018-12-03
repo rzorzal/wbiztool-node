@@ -1,22 +1,23 @@
 {
-  "name": "wbiztool-node",
-  "version": "1.0.2",
-  "description": "Just a proxy for the API (https://wbiztool.com/docs/)",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rzorzal/wbiztool-node.git"
-  },
-  "author": "RZorza",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rzorzal/wbiztool-node/issues"
-  },
-  "homepage": "https://github.com/rzorzal/wbiztool-node#readme",
-  "dependencies": {
-    "node-fetch": "^2.3.0"
-  }
+    "name": "wbiztool-node",
+    "version": "1.0.2",
+    "description": "Just a proxy for the API (https://wbiztool.com/docs/)",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rzorzal/wbiztool-node.git"
+    },
+    "author": "RZorza",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/rzorzal/wbiztool-node/issues"
+    },
+    "homepage": "https://github.com/rzorzal/wbiztool-node#readme",
+    "dependencies": {
+        "node-fetch": "^2.3.0"
+    },
+    "keywords":["wbiztool", "whatsapp", "api", "node"]
 }
